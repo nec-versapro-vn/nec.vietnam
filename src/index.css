@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@theme {
+  --animate-shimmer: shimmer 2s linear infinite;
+  
+  @keyframes shimmer {
+    0% { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@utility perspective-* {
+  perspective: --value;
+}
+
+@utility rotate-x-* {
+  transform: rotateX(--value);
+}
